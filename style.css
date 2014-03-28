@@ -1,0 +1,29 @@
+* 			{margin: 0; padding: 0;}
+html, body 	{width: 100%; height: 100%; overflow: hidden;}
+body 		{background: #c0f9fb url("img/repeat-bg.png") left bottom repeat-x;}
+a 			{color: #444444; text-decoration: none;}
+
+.twitter 	{background: url("img/twitter-logo.png") no-repeat; cursor: pointer; width: 62px; height: 59px; position: absolute; bottom: 0px; opacity: .5;}
+
+.text 		{width:300px; padding: 20px 0 40px; position: absolute; left: 50%; margin-left: -150px; bottom: 100px; background: #fef2c1; border: 2px solid #4f1800; text-align: center; font: normal 24px Tahoma,sans-serif; color: #444444;  webkit-transition:all 1s ease-in; transition:all 1s ease-in; opacity: 0;}
+.text p 	{margin: 20px 0;}
+.dog 		{background: url("img/dog.png") no-repeat; width: 104px; height: 68px; position: absolute; bottom: -45px; left: 100px;}
+
+.active .twitter 	{animation: fly 5s infinite linear; -webkit-animation: fly 5s infinite linear;}
+.unactive .twitter 	{display: none;}
+.unactive .text 	{bottom: 140px; opacity: 1;}
+
+
+.share-buttons .share-btn 			{background: #3fa8f3; color: #fff; width: 90%; height: 40px; display: block; margin: 5%; font-size: 18px; line-height: 40px; font-family: Arial,sans-serif; cursor: pointer; margin-top: 20px;}
+.share-buttons .share-btn.facebook 	{background: #3b5998; }
+
+@keyframes fly {
+	15% { opacity: 1;}
+	100% { bottom: 120%;}
+}
+
+@-webkit-keyframes fly {
+	15% { opacity: 1;}
+	100% { bottom: 120%;}
+}
+
